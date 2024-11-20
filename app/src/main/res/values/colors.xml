@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="lighter_grey">#EAEAEA</color>
+    <color name="dark_grey_start">#636363</color>
+    <color name="dark_grey_end">#828282</color>
+    <color name="html_grey">#808080</color>
+    <color name="title_red">#cc0001</color>
+    <color name="main_view_button_color">#2196F3</color>
+    <color name="blue_de_france">#0039a6</color>
+    <color name="sjb_green">#02ab50</color>
+    <color name="sjb_yellow">#f9cc0f</color>
+    <color name="ndf_red">#961d2c</color>
+    <color name="ndf_yellow">#f1b231</color>
+    <color name="ndf_blue">#084774</color>
+    <color name="npp_start_col">#7e0044</color>
+    <color name="npp_end_col">#f1017e</color>
+    <color name="slpp_start_color">#8e1620</color>
+    <color name="slpp_end_color">#c41f2d</color>
+    <color name="sb_color">#1e7db3</color>
+    <color name="sb_start_color">#114782</color>
+    <color name="sb_end_color">#009dfe</color>
+    <color name="itak_start_color">#e57000</color>
+    <color name="itak_end_color">#ff9a28</color>
+    <color name="unp_start_color">#046206</color>
+    <color name="unp_end_color">#08a415</color>
+</resources>

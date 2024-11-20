@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutParty"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/layout_bg_itak"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginVertical="3dp"
+        android:layout_marginStart="3dp"
+        app:cardCornerRadius="3dp">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_itak" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="3dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewParty"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="3dp"
+            android:gravity="center_vertical"
+            android:text="@string/testing_party_3"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/progressView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:background="@drawable/view_progression_bg_itak" />
+
+            <View
+                android:id="@+id/emptyView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textViewSeats"
+        android:layout_width="28dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="3dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="3dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewVotes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/testing_votes_1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <TextView
+            android:id="@+id/textViewPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/testing_percentage_1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

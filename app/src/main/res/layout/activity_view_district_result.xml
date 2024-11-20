@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewResultsActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/text_view_background_title"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/main_page_title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeader"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            android:id="@+id/textViewElectoralDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/text_view_background_sub_title"
+            android:gravity="center"
+            android:text="@string/testing_district"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewPollingDivision"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/text_view_background_sub_title"
+            android:gravity="center"
+            android:text="@string/testing_polling_division"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <include
+            android:id="@+id/itemViewParty1"
+            layout="@layout/item_view_district_result" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <include
+            android:id="@+id/itemViewParty2"
+            layout="@layout/item_view_district_result" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <include
+            android:id="@+id/itemViewParty3"
+            layout="@layout/item_view_district_result" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <include
+            android:id="@+id/itemViewParty4"
+            layout="@layout/item_view_district_result" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <include
+            android:id="@+id/itemViewParty5"
+            layout="@layout/item_view_district_result" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <include
+            android:id="@+id/itemViewVotes1"
+            layout="@layout/item_view_votes" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+        <include
+            android:id="@+id/itemViewVotes2"
+            layout="@layout/item_view_votes" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+        <include
+            android:id="@+id/itemViewVotes3"
+            layout="@layout/item_view_votes" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
